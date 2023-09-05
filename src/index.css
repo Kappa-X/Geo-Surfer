@@ -10,6 +10,17 @@
   text-align: center;
 }
 
+.card-container {
+  display: flex;
+  gap: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+#card-img {
+  height: 300px;
+}
+
 .earth {
   height: 25%;
   transition: transform 0.2s;
@@ -17,6 +28,16 @@
 
 .earth:hover {
   transform: scale(1.5);
+}
+
+#start,
+#function,
+#about {
+  width: 100%;
+  min-height: 100vh;
+  float: left;
+  position: relative;
+  background-color: #9e9e9e;
 }
 
 #start h2,
@@ -30,4 +51,46 @@ p {
 }
 #start p:hover {
   transform: scale(1.5);
+}
+
+.main-footer {
+  color: white;
+  background-color: rgb(80, 80, 80);
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-footer a {
+  color: white;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+}
+
+@media (max-width: 850px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  #about {
+    height: 130vh;
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }

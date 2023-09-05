@@ -1,32 +1,23 @@
-import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-class Navbar extends Component {
-  handleNavClick = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  render() {
-    return (
-      <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#start">Geo Surfer</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link" onClick={() => this.handleNavClick('about')} href="#function">Function</a>
-              <a className="nav-link" onClick={() => this.handleNavClick('github')} href="#about">About</a>
-              <a className="nav-link" rel="noreferrer" target='_blank' href="https://github.com/Kappa-X/Geo-Surfer">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    );
-  }
+function BasicExample() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
+      <Container>
+        <Navbar.Brand href="#start">Geo Surfer</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#function">Function</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link rel="noreferrer" target='_blank' href="https://github.com/Kappa-X/Geo-Surfer">GitHub</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default Navbar;
+export default BasicExample;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './components/navbar';
-import "bootstrap/dist/css/bootstrap.rtl.min.css";
+import Card from './components/card';
+import Footer from './components/footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'; 
 
 class App extends Component {
@@ -9,7 +11,7 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <div>
+                <div className='page-container'>
                     <Navbar />
                     <section id="start" className="full-height centered">
                         <h2>Welcome to Geo Surfer!</h2>
@@ -21,9 +23,12 @@ class App extends Component {
                         <p>This is the function section content.</p>
                     </section>
                     <section id="about" className="full-height centered">
-                        <h2>About Section</h2>
-                        <p>This is the about section content.</p>
+                        <div className='card-container'>
+                        <Card title="Vin Appenzeller" alt="Vin Andri Appenzeller" image="vin.jpg" text="Mitgründer von Geo Surfer und purer Arier." link="https://github.com/Vinappenzeller"/>
+                        <Card title="Finn Neiger" alt="Finn Andreas Neiger" image="finn.jpg" text="Mitgründer von Geo Surfer und sicher kein Kommunist" link="https://github.com/Kappa-X"/>
+                        </div>
                     </section>
+                    <Footer />
                 </div>
             </React.Fragment>
         );
