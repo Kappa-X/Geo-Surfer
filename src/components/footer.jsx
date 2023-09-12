@@ -31,7 +31,7 @@ class Footer extends Component {
                             <ul className='list-unstyled'>
                                 <li><a rel="noreferrer" target='_blank' href="https://www.youtube.com/watch?v=Yb6dZ1IFlKc">Motivation Video</a></li>
                                 <li><a rel="noreferrer" target='_blank' href="https://finn-neiger.ch">Finns Website</a></li>
-                                <li><a rel="noreferrer" target='_blank' href="https://finn-neiger.ch">Vins Website</a></li>
+                                <li><a rel="noreferrer" target='_blank' href="https://vinappenzeller.com">Vins Website</a></li>
                             </ul>
                         </div>
                     </div>
