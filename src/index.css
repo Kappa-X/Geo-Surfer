@@ -72,6 +72,11 @@ p {
   min-height: 10vh;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (max-width: 850px) {
   .card-container {
     flex-direction: column;
