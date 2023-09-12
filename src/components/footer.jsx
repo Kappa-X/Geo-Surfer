@@ -49,7 +49,7 @@ class Footer extends Component {
                   <a
                     rel='noreferrer'
                     target='_blank'
-                    href='https://vinappenzeller.ch'
+                    href='https://vinappenzeller.com'
                   >
                     Vins Website
                   </a>
