@@ -22,10 +22,9 @@
 }
 
 .earth {
-  height: 50%;
-  transition: transform 0.2s;
+  height: 80%;
   animation-name: spin;
-  animation-duration: 5000ms;
+  animation-duration: 10000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -39,9 +38,6 @@
   }
 }
 
-.earth:hover {
-  transform: scale(1.5);
-}
 
 #start,
 #function,
@@ -118,3 +114,28 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+
+.function {
+  height: 80%;
+  width: 80%;
+  background-color: #212529;
+  border-radius: 30px;
+  color: greenyellow;
+  padding: 5px;
+  box-shadow: #212529;
+  padding: 50px;
+}
+
+#input {
+  background-color: rgb(80, 80, 80);
+  height: 40%;
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+
+#output {
+  background-color: rgb(80, 80, 80);
+  height: 40%;
+  border-radius: 30px;
+}
+
