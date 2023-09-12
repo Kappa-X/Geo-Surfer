@@ -22,8 +22,22 @@
 }
 
 .earth {
-  height: 25%;
+  height: 50%;
   transition: transform 0.2s;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 
 .earth:hover {
@@ -43,14 +57,17 @@
 #start h2,
 p {
   color: greenyellow;
-  transform: 0.2s;
+  transform: 0.5s;
 }
 
 #start h2:hover {
   transform: scale(1.5);
+  cursor: pointer;
 }
+
 #start p:hover {
   transform: scale(1.5);
+  cursor: pointer;
 }
 
 .main-footer {
