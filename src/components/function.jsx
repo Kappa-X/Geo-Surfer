@@ -4,8 +4,9 @@ import { fetchData } from '../API.js';
 function Send() {
     var userinput = document.getElementById("userinput").value;
     localStorage.setItem('userinput', userinput);
-    console.log("Neiger");
     fetchData();
+    const data = localStorage.getItem('data');
+    console.log(JSON.parse(data));
 };
 
 class Function extends Component {

@@ -18,7 +18,8 @@ export async function fetchData() {
     const response = await fetch(url, options);
     const result = await response.text();
     const data = JSON.parse(result);
-    console.log(result);
+    console.log(data);
+    localStorage.setItem('data', JSON.stringify(data));
   } catch (error) {
     console.error(error);
   }
