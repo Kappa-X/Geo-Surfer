@@ -16,7 +16,7 @@ class Function extends Component {
         <div className="function">
             <h1 id="functionh1">Functions</h1>
             <div id="input">
-              <h2>Search for a Country</h2>
+              <h2 id="h2">Search for a Country</h2>
               <div id="Inputbox">
               <button onClick={Send} id="Search">Search</button>
               <input id="userinput" type="text" />
