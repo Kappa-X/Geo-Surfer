@@ -10,7 +10,7 @@ export async function fetchData() {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '',
+        'X-RapidAPI-Key': '18bde6e0b3mshee662209135796ap1587bfjsn0886e9e7e970',
         'X-RapidAPI-Host': 'countries-cities.p.rapidapi.com'
       }
     };
