@@ -43,12 +43,15 @@ class Function extends Component {
 
       <section id="function" className="full-height centered">
         <div className="function">
-            <h1 id="functionh1">Functions</h1>
+            <h1 id="functionh1">Enter the country code to search for a Country</h1>
             <div id="input">
-              <h2 id="h2">Search for a Country</h2>
               <div id="Inputbox">
+<<<<<<< HEAD
               <button onClick={this.Send} id="Search">Search</button>
+=======
+>>>>>>> 824c702d22f2379f9ebaaa87a6abb1735aca1b3f
               <input id="userinput" type="text" />
+              <button onClick={Send} id="Search">Search</button>
               </div>
             </div>
             <div id="output">

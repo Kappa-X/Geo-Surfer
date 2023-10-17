@@ -22,8 +22,8 @@ class App extends Component {
                     <Function />
                     <section id="about" className="full-height centered">
                         <div className='card-container'>
-                        <Card title="Vin Appenzeller" alt="Vin Andri Appenzeller" image="vin.jpg" text="Mitgründer von Geo Surfer und purer Arier." link="https://github.com/Vinappenzeller"/>
-                        <Card title="Finn Neiger" alt="Finn Andreas Neiger" image="finn.jpg" text="Mitgründer von Geo Surfer und sicher kein Kommunist" link="https://github.com/Kappa-X"/>
+                        <Card title="Vin Appenzeller" alt="Vin Andri Appenzeller" image="vin.jpg" text="Mitgründer von Geo Surfer." link="https://github.com/Vinappenzeller"/>
+                        <Card title="Finn Neiger" alt="Finn Andreas Neiger" image="finn.jpg" text="Mitgründer von Geo Surfer." link="https://github.com/Kappa-X"/>
                         </div>
                     </section>
                     <Footer />

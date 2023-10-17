@@ -11,7 +11,7 @@ class Footer extends Component {
             <div className='col'>
               <h4>Geo Surfer</h4>
               <ul className='list-unstyled'>
-                <li>911-420-186</li>
+                <li>911-420-187</li>
                 <li>Aarau, Switzerland</li>
                 <li>Bahnhofstrasse 91</li>
               </ul>
