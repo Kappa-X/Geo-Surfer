@@ -51,7 +51,7 @@ class Function extends Component {
 =======
 >>>>>>> 824c702d22f2379f9ebaaa87a6abb1735aca1b3f
               <input id="userinput" type="text" />
-              <button onClick={Send} id="Search">Search</button>
+              <button onClick={this.Send} id="Search">Search</button>
               </div>
             </div>
             <div id="output">
