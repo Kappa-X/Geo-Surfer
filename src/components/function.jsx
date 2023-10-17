@@ -19,7 +19,7 @@ class Function extends Component {
             <div id="input">
               <div id="Inputbox">
               <input id="userinput" type="text" />
-              <button onClick={Send} id="Search">Search</button>
+              <button onClick={this.Send} id="Search">Search</button>
               </div>
             </div>
             <div id="output">
