@@ -140,3 +140,18 @@ a:active {
   border-radius: 30px;
 }
 
+h2 {
+  color: greenyellow;
+  margin-right: 50%;
+}
+
+#Search {
+  background-color: greenyellow;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 60px;
+  color: #212529;
+  font: bolder;
+  
+}
