@@ -14,12 +14,11 @@ class Function extends Component {
     return (
       <section id="function" className="full-height centered">
         <div className="function">
-            <h1 id="functionh1">Functions</h1>
+            <h1 id="functionh1">Enter the country code to search for a Country</h1>
             <div id="input">
-              <h2 id="h2">Search for a Country</h2>
               <div id="Inputbox">
-              <button onClick={Send} id="Search">Search</button>
               <input id="userinput" type="text" />
+              <button onClick={Send} id="Search">Search</button>
               </div>
             </div>
             <div id="output">
