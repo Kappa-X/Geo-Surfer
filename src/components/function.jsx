@@ -46,10 +46,6 @@ class Function extends Component {
             <h1 id="functionh1">Enter the country code to search for a Country</h1>
             <div id="input">
               <div id="Inputbox">
-<<<<<<< HEAD
-              <button onClick={this.Send} id="Search">Search</button>
-=======
->>>>>>> 824c702d22f2379f9ebaaa87a6abb1735aca1b3f
               <input id="userinput" type="text" />
               <button onClick={this.Send} id="Search">Search</button>
               </div>
