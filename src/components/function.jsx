@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import { fetchData } from '../API.js';
+import { fetchData, data } from '../API.js';
+
+export var userinput;
 
 class Function extends Component {
 
   Send = async () => {
-    var userinput = document.getElementById("userinput").value;
-    localStorage.setItem('userinput', userinput);
+    userinput = document.getElementById("userinput").value;
+    document.getElementById("userinput").value = "";
     await fetchData();
-    const data = localStorage.getItem('data');
-    const Data = JSON.parse(data);
-    console.log(Data + "fail");
-    if (Data.status === "success") {
+    console.log(data + "fail");
+    if (data.status === "success") {
       this.setState({
-        Country: "Country: " + Data.name,
-        Currency: "Currency: " + Data.currency.name,
-        Capital: "Capital: " + Data.capital.name,
-        Population: "Population: " + Data.population,
+        Country: "Country: " + data.name,
+        Currency: "Currency: " + data.currency.name,
+        Capital: "Capital: " + data.capital.name,
+        Population: "Population: " + data.population,
       });
     } else {
       this.setState({
